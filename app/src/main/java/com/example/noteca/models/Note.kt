@@ -3,6 +3,7 @@ package com.example.noteca.models
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 import java.util.Date
 
 
@@ -16,6 +17,4 @@ data class Note(
     val note: String?,
     @ColumnInfo(name = "date")
     val date: String?
-
-
-)
+) : Serializable
